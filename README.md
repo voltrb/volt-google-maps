@@ -42,4 +42,9 @@ The google_map tag can be passed many attributes:
 
 - zoom - integer for different zoom levels
 - center - the address to center the map on
-- markers - an array of marker Models  (with _address and _content)
+- markers - an array of marker Models  (with _address and _content) or address strings
+
+So signature for your views is next:
+```xml
+<:google_maps center="{{ page._address }}" zoom="{{ page._zoom }}" markers="{{ page._markers }}" />
+```

@@ -48,3 +48,8 @@ So signature for your views is next:
 ```xml
 <:google_maps center="{{ page._address }}" zoom="{{ page._zoom }}" markers="{{ page._markers }}" />
 ```
+
+Marker Model can be created in your controller like this
+```ruby
+page._markers.create({address: 'San Francisco', content: 'Hello World'})
+```
